@@ -5,7 +5,7 @@ class Settings(BaseSettings):
 
     # Model Settings
     model_name: str = "facebook/opt-125m"
-    max_model_len: int = 4096
+    max_model_len: int = 2048
     gpu_memory_utilization: float = 0.9
     tensor_parallel_size: int = 1
     dtype: str = "float16"

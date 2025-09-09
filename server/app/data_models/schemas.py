@@ -14,7 +14,7 @@ class GenerateResponse(BaseModel):
     text: str
     finish_reason: str #design choice?
     prompt_tokens: int
-    completion_tokens: str
+    completion_tokens: int
 
 class ChatMessage(BaseModel):
     role: str

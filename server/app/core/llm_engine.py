@@ -3,7 +3,7 @@ from .config import settings
 import logging
 from typing import List
 
-logger = logging.getLogger
+logger = logging.getLogger()
 
 class LLMEngine: #Borrows settings from config
     def __init__(self):

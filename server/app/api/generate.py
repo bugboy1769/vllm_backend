@@ -22,7 +22,7 @@ async def generate_text(request: GenerateRequest):
         outputs=llm_engine.generate([request.prompt], sampling_params)
         output = outputs[0]
 
-        return GenerateRequest(
+        return GenerateResponse(
             text=output.outputs[0].text,
             finish_reason=output.outputs[0].finish_reason,
             prompt_tokens=len(output.prompt_token_ids),
